@@ -208,4 +208,79 @@ grid-template-columns:1fr 1fr;
 .hero p{
 font-size:18px;
 }
+
+.badge{
+display:inline-block;
+padding:10px 18px;
+border-radius:999px;
+background:#ede9fe;
+color:#6D28D9;
+font-weight:600;
+margin-bottom:20px;
+}
+
+.subjects-section{
+padding:80px 8%;
+}
+
+.subjects-section h2{
+text-align:center;
+font-size:42px;
+margin-bottom:40px;
+}
+
+.card ul{
+margin-top:15px;
+margin-left:20px;
+color:#6b7280;
+}
+
+.card li{
+margin-bottom:8px;
+}
+
+.testimonials{
+padding:100px 8%;
+background:white;
+}
+
+.testimonials h2{
+text-align:center;
+margin-bottom:40px;
+font-size:42px;
+}
+
+.testimonial-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.testimonial{
+background:#fafafa;
+padding:30px;
+border-radius:18px;
+border:1px solid #e5e7eb;
+}
+
+.faq{
+padding:100px 8%;
+}
+
+.faq h2{
+text-align:center;
+margin-bottom:40px;
+font-size:42px;
+}
+
+.faq-item{
+background:white;
+padding:25px;
+border-radius:16px;
+border:1px solid #e5e7eb;
+margin-bottom:20px;
+}
+
+footer h3{
+margin-bottom:10px;
 }

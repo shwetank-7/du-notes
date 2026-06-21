@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Dashboard | DU Notes</title>
 
 <link rel="stylesheet" href="style.css">
@@ -14,21 +15,55 @@ padding:60px 8%;
 }
 
 .welcome{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+gap:20px;
 margin-bottom:40px;
 }
 
 .welcome h1{
-font-size:42px;
+font-size:48px;
 }
 
 .welcome p{
 color:#6b7280;
 }
 
+.stats-row{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-bottom:50px;
+}
+
+.stat-card{
+background:white;
+padding:25px;
+border-radius:20px;
+border:1px solid #e5e7eb;
+}
+
+.stat-card h2{
+color:#6D28D9;
+font-size:32px;
+}
+
+.stat-card p{
+color:#6b7280;
+}
+
+.section-title{
+font-size:32px;
+margin-bottom:25px;
+}
+
 .dashboard-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 gap:25px;
+margin-bottom:50px;
 }
 
 .dashboard-card{
@@ -63,10 +98,10 @@ border-radius:12px;
 }
 
 .quick-links{
-margin-top:50px;
 display:flex;
 gap:15px;
 flex-wrap:wrap;
+margin-bottom:50px;
 }
 
 .quick-links a{
@@ -78,9 +113,45 @@ text-decoration:none;
 color:#111827;
 }
 
+.activity{
+background:white;
+padding:30px;
+border-radius:20px;
+border:1px solid #e5e7eb;
+}
+
+.activity h2{
+margin-bottom:20px;
+}
+
+.activity-item{
+padding:15px 0;
+border-bottom:1px solid #e5e7eb;
+}
+
+.activity-item:last-child{
+border-bottom:none;
+}
+
+.activity-item p{
+color:#6b7280;
+}
+
+@media(max-width:768px){
+
+.welcome h1{
+font-size:36px;
+}
+
+.section-title{
+font-size:28px;
+}
+
+}
 </style>
 
 </head>
+
 <body>
 
 <nav class="navbar">
@@ -92,6 +163,7 @@ DU NOTES
 <div class="nav-links">
 <a href="index.html">Home</a>
 <a href="pyqs.html">PYQs</a>
+<a href="login.html">Logout</a>
 </div>
 
 </nav>
@@ -100,15 +172,46 @@ DU NOTES
 
 <div class="welcome">
 
+<div>
+
+<div class="badge">
+Student Dashboard
+</div>
+
 <h1>
-Welcome, Student 👋
+Welcome Back 👋
 </h1>
 
 <p>
-Manage your notes and resources.
+Manage your notes, resources and exam preparation.
 </p>
 
 </div>
+
+</div>
+
+<div class="stats-row">
+
+<div class="stat-card">
+<h2>2</h2>
+<p>Purchased Subjects</p>
+</div>
+
+<div class="stat-card">
+<h2>100+</h2>
+<p>Free PYQs</p>
+</div>
+
+<div class="stat-card">
+<h2>24/7</h2>
+<p>Access</p>
+</div>
+
+</div>
+
+<h2 class="section-title">
+My Notes
+</h2>
 
 <div class="dashboard-grid">
 
@@ -119,10 +222,10 @@ Financial Accounting
 </h2>
 
 <p>
-Semester 1 Notes Package
+Semester 1 Complete Notes Package
 </p>
 
-<a href="#" class="open-btn">
+<a href="financial-accounting.html" class="open-btn">
 Open Notes
 </a>
 
@@ -135,10 +238,10 @@ Corporate Accounting
 </h2>
 
 <p>
-Semester 2 Notes Package
+Semester 2 Complete Notes Package
 </p>
 
-<a href="#" class="open-btn">
+<a href="corporate-accounting.html" class="open-btn">
 Open Notes
 </a>
 
@@ -146,23 +249,72 @@ Open Notes
 
 </div>
 
+<h2 class="section-title">
+Quick Actions
+</h2>
+
 <div class="quick-links">
 
 <a href="pyqs.html">
 Free PYQs
 </a>
 
+<a href="financial-accounting.html">
+Financial Accounting
+</a>
+
+<a href="corporate-accounting.html">
+Corporate Accounting
+</a>
+
 <a href="index.html">
 Homepage
 </a>
 
-<a href="login.html">
-Logout
-</a>
+</div>
+
+<h2 class="section-title">
+Recent Activity
+</h2>
+
+<div class="activity">
+
+<div class="activity-item">
+<strong>Financial Accounting</strong>
+<p>Viewed notes recently.</p>
+</div>
+
+<div class="activity-item">
+<strong>Corporate Accounting</strong>
+<p>Opened subject page.</p>
+</div>
+
+<div class="activity-item">
+<strong>PYQs</strong>
+<p>Accessed free resources.</p>
+</div>
 
 </div>
 
 </section>
+
+<footer>
+
+<h3>DU NOTES</h3>
+
+<p>
+Your B.Com Exam Preparation Platform
+</p>
+
+<p>
+© 2026 DU Notes
+</p>
+
+</footer>
+
+<a href="index.html" class="floating-btn">
+Home
+</a>
 
 </body>
 </html>

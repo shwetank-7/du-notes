@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard | DU Notes</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.dashboard{
+padding:60px 8%;
+}
+
+.welcome{
+margin-bottom:40px;
+}
+
+.welcome h1{
+font-size:42px;
+}
+
+.welcome p{
+color:#6b7280;
+}
+
+.dashboard-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.dashboard-card{
+background:white;
+border:1px solid #e5e7eb;
+padding:30px;
+border-radius:20px;
+transition:.3s;
+}
+
+.dashboard-card:hover{
+transform:translateY(-5px);
+box-shadow:0 15px 35px rgba(0,0,0,.06);
+}
+
+.dashboard-card h2{
+margin-bottom:15px;
+}
+
+.dashboard-card p{
+color:#6b7280;
+margin-bottom:20px;
+}
+
+.open-btn{
+display:inline-block;
+padding:12px 24px;
+background:#6D28D9;
+color:white;
+text-decoration:none;
+border-radius:12px;
+}
+
+.quick-links{
+margin-top:50px;
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.quick-links a{
+padding:12px 20px;
+background:white;
+border:1px solid #e5e7eb;
+border-radius:12px;
+text-decoration:none;
+color:#111827;
+}
+
+</style>
+
+</head>
+<body>
+
+<nav class="navbar">
+
+<div class="logo">
+DU NOTES
+</div>
+
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="pyqs.html">PYQs</a>
+</div>
+
+</nav>
+
+<section class="dashboard">
+
+<div class="welcome">
+
+<h1>
+Welcome, Student 👋
+</h1>
+
+<p>
+Manage your notes and resources.
+</p>
+
+</div>
+
+<div class="dashboard-grid">
+
+<div class="dashboard-card">
+
+<h2>
+Financial Accounting
+</h2>
+
+<p>
+Semester 1 Notes Package
+</p>
+
+<a href="#" class="open-btn">
+Open Notes
+</a>
+
+</div>
+
+<div class="dashboard-card">
+
+<h2>
+Corporate Accounting
+</h2>
+
+<p>
+Semester 2 Notes Package
+</p>
+
+<a href="#" class="open-btn">
+Open Notes
+</a>
+
+</div>
+
+</div>
+
+<div class="quick-links">
+
+<a href="pyqs.html">
+Free PYQs
+</a>
+
+<a href="index.html">
+Homepage
+</a>
+
+<a href="login.html">
+Logout
+</a>
+
+</div>
+
+</section>
+
+</body>
+</html>
